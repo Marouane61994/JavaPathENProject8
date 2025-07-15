@@ -1,6 +1,8 @@
 package com.openclassrooms.tourguide.service;
 
+import java.util.ArrayList;
 import java.util.List;
+
 
 import org.springframework.stereotype.Service;
 
@@ -16,7 +18,7 @@ import com.openclassrooms.tourguide.user.UserReward;
 public class RewardsService {
     private static final double STATUTE_MILES_PER_NAUTICAL_MILE = 1.15077945;
 
-	// proximity in miles
+    // proximity in miles
     private int defaultProximityBuffer = 10;
 	private int proximityBuffer = defaultProximityBuffer;
 	private int attractionProximityRange = 200;
@@ -37,7 +39,7 @@ public class RewardsService {
 	}
 	
 	public void calculateRewards(User user) {
-		List<VisitedLocation> userLocations = user.getVisitedLocations();
+		List<VisitedLocation> userLocations = new ArrayList<>(user.getVisitedLocations());
 		List<Attraction> attractions = gpsUtil.getAttractions();
 		
 		for(VisitedLocation visitedLocation : userLocations) {
@@ -70,11 +72,11 @@ public class RewardsService {
         double lon2 = Math.toRadians(loc2.longitude);
 
         double angle = Math.acos(Math.sin(lat1) * Math.sin(lat2)
-                               + Math.cos(lat1) * Math.cos(lat2) * Math.cos(lon1 - lon2));
+                + Math.cos(lat1) * Math.cos(lat2) * Math.cos(lon1 - lon2));
 
         double nauticalMiles = 60 * Math.toDegrees(angle);
         double statuteMiles = STATUTE_MILES_PER_NAUTICAL_MILE * nauticalMiles;
         return statuteMiles;
-	}
+    }
 
 }
