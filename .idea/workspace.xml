@@ -4,29 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="633a723f-f3bf-4624-abd5-6c8884042bc1" name="Changes" comment="Create dev">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/RewardCentral__2_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/RewardCentral__3_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/RewardCentral__4_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/TripPricer__2_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/TripPricer__3_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/TripPricer__4_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/gpsUtil__2_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/gpsUtil__3_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/gpsUtil__4_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/gpsUtil___2_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TourGuide/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/TourGuide/readme.md" afterDir="false" />
+    <list default="true" id="633a723f-f3bf-4624-abd5-6c8884042bc1" name="Changes" comment="TestRewardsService fixed">
+      <change afterPath="$PROJECT_DIR$/TourGuide/src/main/java/com/openclassrooms/tourguide/user/NearbyAttractionDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TourGuide/src/main/java/com/openclassrooms/tourguide/TourGuideController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TourGuide/src/main/java/com/openclassrooms/tourguide/TourGuideController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TourGuide/src/main/java/com/openclassrooms/tourguide/service/RewardsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/TourGuide/src/main/java/com/openclassrooms/tourguide/service/RewardsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TourGuide/src/main/java/com/openclassrooms/tourguide/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/TourGuide/src/main/java/com/openclassrooms/tourguide/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TourGuide/src/test/java/com/openclassrooms/tourguide/TestRewardsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/TourGuide/src/test/java/com/openclassrooms/tourguide/TestRewardsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TourGuide/src/main/java/com/openclassrooms/tourguide/service/TourGuideService.java" beforeDir="false" afterPath="$PROJECT_DIR$/TourGuide/src/main/java/com/openclassrooms/tourguide/service/TourGuideService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TourGuide/src/test/java/com/openclassrooms/tourguide/TestPerformance.java" beforeDir="false" afterPath="$PROJECT_DIR$/TourGuide/src/test/java/com/openclassrooms/tourguide/TestPerformance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TourGuide/src/test/java/com/openclassrooms/tourguide/TestTourGuideService.java" beforeDir="false" afterPath="$PROJECT_DIR$/TourGuide/src/test/java/com/openclassrooms/tourguide/TestTourGuideService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TourGuide/target/test-classes/com/openclassrooms/tourguide/TestPerformance.class" beforeDir="false" afterPath="$PROJECT_DIR$/TourGuide/target/test-classes/com/openclassrooms/tourguide/TestPerformance.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TourGuide/target/test-classes/com/openclassrooms/tourguide/TestTourGuideService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TourGuide/target/test-classes/com/openclassrooms/tourguide/TestTourGuideService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -57,33 +56,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Application.TourguideApplication.executor": "Run",
-    "JUnit.TestPerformance.executor": "Run",
-    "JUnit.TestPerformance.highVolumeGetRewards.executor": "Run",
-    "JUnit.TestPerformance.highVolumeTrackLocation.executor": "Run",
-    "JUnit.TestRewardsService.executor": "Run",
-    "JUnit.TestRewardsService.isWithinAttractionProximity.executor": "Run",
-    "JUnit.TestRewardsService.nearAllAttractions.executor": "Run",
-    "JUnit.TestRewardsService.userGetRewards.executor": "Run",
-    "JUnit.TestTourGuideService.executor": "Run",
-    "JUnit.TestTourGuideService.getTripDeals.executor": "Run",
-    "JUnit.TourguideApplicationTests.executor": "Run",
-    "Maven.tourguide [clean,install].executor": "Run",
-    "Maven.tourguide [clean].executor": "Run",
-    "Maven.tourguide [install:install-file...].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "dev",
-    "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "configurable.group.build"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Application.TourguideApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestPerformance.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestPerformance.highVolumeGetRewards.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestPerformance.highVolumeTrackLocation.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestRewardsService.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestRewardsService.isWithinAttractionProximity.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestRewardsService.nearAllAttractions.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestRewardsService.userGetRewards.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestTourGuideService.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestTourGuideService.getNearbyAttractions.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestTourGuideService.getTripDeals.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TourguideApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.tourguide [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.tourguide [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.tourguide [install:install-file...].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.build&quot;
   }
-}]]></component>
+}</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn install:install-file -Dfile=/libs/gpsUtil.jar -DgroupId=gpsUtil -DartifactId=gpsUtil -Dversion=1.0.0 -Dpackaging=jar" />
@@ -96,20 +96,7 @@
       <command value="mvn install:install-file -Dfile=C:\Users\Win10\Desktop\Projet8\JavaPathENProject8\TourGuide\libs\TripPricer.jar -DgroupId=tripPricer -DartifactId=tripPricer -Dversion=1.0.0 -Dpackaging=jar " />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestRewardsService">
-    <configuration name="TourguideApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.tourguide.TourguideApplication" />
-      <module name="tourguide" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.openclassrooms.tourguide.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestTourGuideService.getTripDeals">
     <configuration name="TestPerformance" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="tourguide" />
       <extension name="coverage">
@@ -121,6 +108,22 @@
       <option name="PACKAGE_NAME" value="com.openclassrooms.tourguide" />
       <option name="MAIN_CLASS_NAME" value="com.openclassrooms.tourguide.TestPerformance" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPerformance.highVolumeGetRewards" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tourguide" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.openclassrooms.tourguide.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.openclassrooms.tourguide" />
+      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.tourguide.TestPerformance" />
+      <option name="METHOD_NAME" value="highVolumeGetRewards" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -140,22 +143,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRewardsService.nearAllAttractions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="tourguide" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.openclassrooms.tourguide.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.openclassrooms.tourguide" />
-      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.tourguide.TestRewardsService" />
-      <option name="METHOD_NAME" value="nearAllAttractions" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestTourGuideService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tourguide" />
       <extension name="coverage">
@@ -167,6 +154,22 @@
       <option name="PACKAGE_NAME" value="com.openclassrooms.tourguide" />
       <option name="MAIN_CLASS_NAME" value="com.openclassrooms.tourguide.TestTourGuideService" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestTourGuideService.getNearbyAttractions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tourguide" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.openclassrooms.tourguide.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.openclassrooms.tourguide" />
+      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.tourguide.TestTourGuideService" />
+      <option name="METHOD_NAME" value="getNearbyAttractions" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -189,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestRewardsService" />
-        <item itemvalue="JUnit.TestTourGuideService" />
-        <item itemvalue="JUnit.TestRewardsService.nearAllAttractions" />
-        <item itemvalue="Application.TourguideApplication" />
         <item itemvalue="JUnit.TestTourGuideService.getTripDeals" />
+        <item itemvalue="JUnit.TestTourGuideService.getNearbyAttractions" />
+        <item itemvalue="JUnit.TestTourGuideService" />
+        <item itemvalue="JUnit.TestRewardsService" />
+        <item itemvalue="JUnit.TestPerformance.highVolumeGetRewards" />
       </list>
     </recent_temporary>
   </component>
@@ -214,22 +217,20 @@
       <option name="project" value="LOCAL" />
       <updated>1752150385430</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="TestRewardsService fixed">
+      <option name="closed" value="true" />
+      <created>1752612765415</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1752612765415</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create dev" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create dev" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/TourGuide/src/main/java/com/openclassrooms/tourguide/service/RewardsService.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="TestRewardsService fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="TestRewardsService fixed" />
   </component>
 </project>
