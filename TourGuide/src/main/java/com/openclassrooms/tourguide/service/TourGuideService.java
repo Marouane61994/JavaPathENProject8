@@ -17,7 +17,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import gpsUtil.GpsUtil;
-import gpsUtil.location.Attraction;
 import gpsUtil.location.Location;
 import gpsUtil.location.VisitedLocation;
 
@@ -91,6 +90,10 @@ public class TourGuideService {
         return visitedLocation;
     }
 
+    public void calculateAllUsersRewardsParallel() {
+        List<User> users = getAllUsers();
+        rewardsService.calculateAllRewardsInParallel(users);
+    }
 
     private void addShutDownHook() {
         Runtime.getRuntime().addShutdownHook(new Thread() {
@@ -120,7 +123,8 @@ public class TourGuideService {
 
             internalUserMap.put(userName, user);
         });
-        logger.debug("Created " + InternalTestHelper.getInternalUserNumber() + " internal test users.");
+        logger.debug("Created {} internal test users.", InternalTestHelper.getInternalUserNumber());
+
     }
 
     private void generateUserLocationHistory(User user) {
@@ -172,6 +176,4 @@ public class TourGuideService {
                 .limit(5)
                 .collect(Collectors.toList());
     }
-
-
 }
