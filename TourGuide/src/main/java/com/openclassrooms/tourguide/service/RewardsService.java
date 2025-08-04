@@ -6,7 +6,6 @@ import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
 
 
-
 import org.springframework.stereotype.Service;
 
 import gpsUtil.GpsUtil;
@@ -23,82 +22,76 @@ public class RewardsService {
 
     // proximity in miles
     private int defaultProximityBuffer = 10;
-	private int proximityBuffer = defaultProximityBuffer;
-	private int attractionProximityRange = 200;
-	private final GpsUtil gpsUtil;
-	private final RewardCentral rewardsCentral;
-	private final List<Attraction> attractionsCache;
+    private int proximityBuffer = defaultProximityBuffer;
+    private int attractionProximityRange = 200;
+    private final GpsUtil gpsUtil;
+    private final RewardCentral rewardsCentral;
+    private final List<Attraction> attractionsCache;
 
-	public RewardsService(GpsUtil gpsUtil, RewardCentral rewardCentral) {
-		this.gpsUtil = gpsUtil;
-		this.rewardsCentral = rewardCentral;
-		this.attractionsCache = gpsUtil.getAttractions();
-	}
-	
-	public void setProximityBuffer(int proximityBuffer) {
-		this.proximityBuffer = proximityBuffer;
-	}
-	
-	public void setDefaultProximityBuffer() {
-		proximityBuffer = defaultProximityBuffer;
-	}
+    public RewardsService(GpsUtil gpsUtil, RewardCentral rewardCentral) {
+        this.gpsUtil = gpsUtil;
+        this.rewardsCentral = rewardCentral;
+        this.attractionsCache = gpsUtil.getAttractions();
+    }
 
-	//public void calculateRewards(User user) {
-		//List<VisitedLocation> userLocations = new ArrayList<>(user.getVisitedLocations());
-		//List<Attraction> attractions = gpsUtil.getAttractions();
-		
-		//for(VisitedLocation visitedLocation : userLocations) {
-			//for(Attraction attraction : attractions) {
-			//if(user.getUserRewards().stream().filter(r -> r.attraction.attractionName.equals(attraction.attractionName)).count() == 0) {
-				//if(nearAttraction(visitedLocation, attraction)) {
-				//	user.addUserReward(new UserReward(visitedLocation, attraction, getRewardPoints(attraction, user)));
-				//	}
-			//}
-		//	}
-		//}
+    public void setProximityBuffer(int proximityBuffer) {
+        this.proximityBuffer = proximityBuffer;
+    }
+
+    public void setDefaultProximityBuffer() {
+        proximityBuffer = defaultProximityBuffer;
+    }
+
+    //public void calculateRewards(User user) {
+    //List<VisitedLocation> userLocations = new ArrayList<>(user.getVisitedLocations());
+    //List<Attraction> attractions = gpsUtil.getAttractions();
+
+    //for(VisitedLocation visitedLocation : userLocations) {
+    //for(Attraction attraction : attractions) {
+    //if(user.getUserRewards().stream().filter(r -> r.attraction.attractionName.equals(attraction.attractionName)).count() == 0) {
+    //if(nearAttraction(visitedLocation, attraction)) {
+    //	user.addUserReward(new UserReward(visitedLocation, attraction, getRewardPoints(attraction, user)));
+    //	}
+    //}
+    //	}
+    //}
 //	}
 
-	public void calculateRewards(User user) {
-		List<VisitedLocation> userLocations = new ArrayList<>(user.getVisitedLocations());
-		//List<Attraction> attractions = gpsUtil.getAttractions();
-		List<Attraction> attractions = attractionsCache;
+    public CompletableFuture<Void> calculateRewards(User user) {
+        List<VisitedLocation> userLocations = new ArrayList<>(user.getVisitedLocations());
+        //List<Attraction> attractions = gpsUtil.getAttractions();
+        List<Attraction> attractions = attractionsCache;
+        return CompletableFuture.runAsync(() -> {
+            for (VisitedLocation visitedLocation : userLocations) {
+                for (Attraction attraction : attractions) {
+                    boolean alreadyRewarded = user.getUserRewards().stream()
+                            .anyMatch(r -> r.attraction.attractionName.equals(attraction.attractionName));
 
-		for (VisitedLocation visitedLocation : userLocations) {
-			for (Attraction attraction : attractions) {
-				boolean alreadyRewarded = user.getUserRewards().stream()
-						.anyMatch(r -> r.attraction.attractionName.equals(attraction.attractionName));
+                    if (!alreadyRewarded && nearAttraction(visitedLocation, attraction)) {
+                        int rewardPoints = getRewardPoints(attraction, user);
+                        user.addUserReward(new UserReward(visitedLocation, attraction, rewardPoints));
+                    }
+                }
+            }
 
-				if (!alreadyRewarded && nearAttraction(visitedLocation, attraction)) {
-					int rewardPoints = getRewardPoints(attraction, user);
-					user.addUserReward(new UserReward(visitedLocation, attraction, rewardPoints));
-				}
-			}
-		}
-	}
+        });
 
-	public void calculateAllRewardsInParallel(List<User> users) {
-		List<CompletableFuture<Void>> futures = users.stream()
-				.map(user -> CompletableFuture.runAsync(() -> calculateRewards(user)))
-				.collect(Collectors.toList());
+    }
 
-		CompletableFuture.allOf(futures.toArray(new CompletableFuture[0])).join();
-	}
+    public boolean isWithinAttractionProximity(Attraction attraction, Location location) {
+        return getDistance(attraction, location) > attractionProximityRange ? false : true;
+    }
 
+    private boolean nearAttraction(VisitedLocation visitedLocation, Attraction attraction) {
+        return getDistance(attraction, visitedLocation.location) > proximityBuffer ? false : true;
+    }
 
-	public boolean isWithinAttractionProximity(Attraction attraction, Location location) {
-		return getDistance(attraction, location) > attractionProximityRange ? false : true;
-	}
-	
-	private boolean nearAttraction(VisitedLocation visitedLocation, Attraction attraction) {
-		return getDistance(attraction, visitedLocation.location) > proximityBuffer ? false : true;
-	}
-	
-	public int getRewardPoints(Attraction attraction, User user) {
-		return rewardsCentral.getAttractionRewardPoints(attraction.attractionId, user.getUserId());
-	}
+    public int getRewardPoints(Attraction attraction, User user) {
+        return rewardsCentral.getAttractionRewardPoints(attraction.attractionId, user.getUserId());
+    }
 
 
-	public double getDistance(Location loc1, Location loc2) {
+    public double getDistance(Location loc1, Location loc2) {
         double lat1 = Math.toRadians(loc1.latitude);
         double lon1 = Math.toRadians(loc1.longitude);
         double lat2 = Math.toRadians(loc2.latitude);
