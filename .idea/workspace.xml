@@ -48,34 +48,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Application.TourguideApplication.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestPerformance.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestPerformance.highVolumeGetRewards.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestPerformance.highVolumeTrackLocation.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestRewardsService.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestRewardsService.isWithinAttractionProximity.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestRewardsService.nearAllAttractions.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestRewardsService.userGetRewards.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestTourGuideService.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestTourGuideService.getNearbyAttractions.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestTourGuideService.getTripDeals.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TourguideApplicationTests.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.tourguide [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.tourguide [clean,test].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.tourguide [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.tourguide [install:install-file...].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.build&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.TourguideApplication.executor": "Run",
+    "JUnit.TestPerformance.executor": "Run",
+    "JUnit.TestPerformance.highVolumeGetRewards.executor": "Run",
+    "JUnit.TestPerformance.highVolumeTrackLocation.executor": "Run",
+    "JUnit.TestRewardsService.executor": "Run",
+    "JUnit.TestRewardsService.isWithinAttractionProximity.executor": "Run",
+    "JUnit.TestRewardsService.nearAllAttractions.executor": "Run",
+    "JUnit.TestRewardsService.userGetRewards.executor": "Run",
+    "JUnit.TestTourGuideService.executor": "Run",
+    "JUnit.TestTourGuideService.getNearbyAttractions.executor": "Run",
+    "JUnit.TestTourGuideService.getTripDeals.executor": "Run",
+    "JUnit.TourguideApplicationTests.executor": "Run",
+    "Maven.tourguide [clean,install].executor": "Run",
+    "Maven.tourguide [clean,test].executor": "Run",
+    "Maven.tourguide [clean].executor": "Run",
+    "Maven.tourguide [install:install-file...].executor": "Run",
+    "Maven.tourguide [mkdir,-p,.github/workflows...].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "dev",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.build"
   }
-}</component>
+}]]></component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn install:install-file -Dfile=/libs/gpsUtil.jar -DgroupId=gpsUtil -DartifactId=gpsUtil -Dversion=1.0.0 -Dpackaging=jar" />
@@ -87,6 +88,7 @@
       <command value="- mvn install:install-file -Dfile=C:\Users\Win10\Desktop\Projet8\JavaPathENProject8\TourGuide\libs\TripPricer.jar -DgroupId=tripPricer -DartifactId=tripPricer -Dversion=1.0.0 -Dpackaging=jar " />
       <command value="mvn install:install-file -Dfile=C:\Users\Win10\Desktop\Projet8\JavaPathENProject8\TourGuide\libs\TripPricer.jar -DgroupId=tripPricer -DartifactId=tripPricer -Dversion=1.0.0 -Dpackaging=jar " />
       <command value="mvn clean test" />
+      <command value="mvn mkdir -p .github/workflows nano .github/workflows/ci.yml " />
     </option>
   </component>
   <component name="RunManager" selected="JUnit.TestPerformance">
@@ -266,7 +268,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754903285769</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add pipeline">
+      <option name="closed" value="true" />
+      <created>1754904175129</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1754904175129</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
