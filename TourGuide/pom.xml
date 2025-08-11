@@ -65,9 +65,26 @@
 			<version>1.0.0</version>
 		</dependency>
 	</dependencies>
+	<profiles>
+		<profile>
+			<id>skip-performance-tests</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<skip.performance.tests>true</skip.performance.tests>
+			</properties>
+		</profile>
+	</profiles>
 
 	<build>
 		<plugins>
+			<plugin>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<excludedGroups>performance</excludedGroups>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>

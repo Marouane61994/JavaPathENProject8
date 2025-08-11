@@ -5,17 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="633a723f-f3bf-4624-abd5-6c8884042bc1" name="Changes" comment="add gitignore">
-      <change afterPath="$PROJECT_DIR$/TourGuide/github/workflows/ci.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TourGuide/.github/workflows/ci.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TourGuide/src/main/java/com/openclassrooms/tourguide/service/RewardProcessingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TourGuide/github/workflows/ci.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TourGuide/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TourGuide/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TourGuide/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/TourGuide/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TourGuide/src/main/java/com/openclassrooms/tourguide/service/RewardsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/TourGuide/src/main/java/com/openclassrooms/tourguide/service/RewardsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TourGuide/src/main/java/com/openclassrooms/tourguide/service/TourGuideService.java" beforeDir="false" afterPath="$PROJECT_DIR$/TourGuide/src/main/java/com/openclassrooms/tourguide/service/TourGuideService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TourGuide/src/test/java/com/openclassrooms/tourguide/TestPerformance.java" beforeDir="false" afterPath="$PROJECT_DIR$/TourGuide/src/test/java/com/openclassrooms/tourguide/TestPerformance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TourGuide/src/test/java/com/openclassrooms/tourguide/TestTourGuideService.java" beforeDir="false" afterPath="$PROJECT_DIR$/TourGuide/src/test/java/com/openclassrooms/tourguide/TestTourGuideService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TourGuide/target/test-classes/com/openclassrooms/tourguide/TestPerformance.class" beforeDir="false" afterPath="$PROJECT_DIR$/TourGuide/target/test-classes/com/openclassrooms/tourguide/TestPerformance.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TourGuide/target/test-classes/com/openclassrooms/tourguide/TestRewardsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TourGuide/target/test-classes/com/openclassrooms/tourguide/TestRewardsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TourGuide/target/test-classes/com/openclassrooms/tourguide/TestTourGuideService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TourGuide/target/test-classes/com/openclassrooms/tourguide/TestTourGuideService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TourGuide/target/test-classes/com/openclassrooms/tourguide/TourguideApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +111,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestPerformance.highVolumeGetRewards" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestPerformance.highVolumeTrackLocation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tourguide" />
       <extension name="coverage">
         <pattern>
@@ -125,7 +121,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.openclassrooms.tourguide" />
       <option name="MAIN_CLASS_NAME" value="com.openclassrooms.tourguide.TestPerformance" />
-      <option name="METHOD_NAME" value="highVolumeGetRewards" />
+      <option name="METHOD_NAME" value="highVolumeTrackLocation" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -195,11 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestPerformance.highVolumeTrackLocation" />
         <item itemvalue="JUnit.TestRewardsService" />
         <item itemvalue="JUnit.TestTourGuideService.getTripDeals" />
         <item itemvalue="JUnit.TestTourGuideService.getNearbyAttractions" />
         <item itemvalue="JUnit.TestTourGuideService" />
-        <item itemvalue="JUnit.TestPerformance.highVolumeGetRewards" />
       </list>
     </recent_temporary>
   </component>
@@ -252,7 +248,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754293660801</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add gitignore">
+      <option name="closed" value="true" />
+      <created>1754293805100</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1754293805100</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">

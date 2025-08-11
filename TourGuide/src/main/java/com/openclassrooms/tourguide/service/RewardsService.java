@@ -3,7 +3,7 @@ package com.openclassrooms.tourguide.service;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
-import java.util.stream.Collectors;
+
 
 
 import org.springframework.stereotype.Service;
@@ -42,24 +42,8 @@ public class RewardsService {
         proximityBuffer = defaultProximityBuffer;
     }
 
-    //public void calculateRewards(User user) {
-    //List<VisitedLocation> userLocations = new ArrayList<>(user.getVisitedLocations());
-    //List<Attraction> attractions = gpsUtil.getAttractions();
-
-    //for(VisitedLocation visitedLocation : userLocations) {
-    //for(Attraction attraction : attractions) {
-    //if(user.getUserRewards().stream().filter(r -> r.attraction.attractionName.equals(attraction.attractionName)).count() == 0) {
-    //if(nearAttraction(visitedLocation, attraction)) {
-    //	user.addUserReward(new UserReward(visitedLocation, attraction, getRewardPoints(attraction, user)));
-    //	}
-    //}
-    //	}
-    //}
-//	}
-
     public CompletableFuture<Void> calculateRewards(User user) {
         List<VisitedLocation> userLocations = new ArrayList<>(user.getVisitedLocations());
-        //List<Attraction> attractions = gpsUtil.getAttractions();
         List<Attraction> attractions = attractionsCache;
         return CompletableFuture.runAsync(() -> {
             for (VisitedLocation visitedLocation : userLocations) {
