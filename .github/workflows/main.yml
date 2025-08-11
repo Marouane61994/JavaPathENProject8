@@ -21,13 +21,13 @@ jobs:
           distribution: 'temurin'
 
       - name: Compile
-        run: mvn compile -B
+        run: mvn compile -B --file TourGuide/pom.xml
 
       - name: Run unit tests
-        run: mvn test -B -DskipITs=true -DskipPerformanceTests=true
+        run: mvn test -B -DskipITs=true -DskipPerformanceTests=true --file TourGuide/pom.xml
 
       - name: Package JAR
-        run: mvn package -B -DskipTests
+        run: mvn package -B -DskipTests --file TourGuide/pom.xml
 
       - name: Upload JAR artifact
         uses: actions/upload-artifact@v4
