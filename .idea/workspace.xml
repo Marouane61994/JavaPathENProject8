@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="633a723f-f3bf-4624-abd5-6c8884042bc1" name="Changes" comment="add gitignore">
-      <change afterPath="$PROJECT_DIR$/TourGuide/.github/workflows/ci.yml" afterDir="false" />
+    <list default="true" id="633a723f-f3bf-4624-abd5-6c8884042bc1" name="Changes" comment="add pipeline">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TourGuide/github/workflows/ci.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TourGuide/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TourGuide/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TourGuide/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/TourGuide/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TourGuide/src/main/java/com/openclassrooms/tourguide/service/RewardsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/TourGuide/src/main/java/com/openclassrooms/tourguide/service/RewardsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TourGuide/src/test/java/com/openclassrooms/tourguide/TestPerformance.java" beforeDir="false" afterPath="$PROJECT_DIR$/TourGuide/src/test/java/com/openclassrooms/tourguide/TestPerformance.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,7 +250,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754293805100</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add pipeline">
+      <option name="closed" value="true" />
+      <created>1754901911586</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1754901911586</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -274,6 +276,7 @@
     <MESSAGE value="TestRewardsService fixed" />
     <MESSAGE value="Add the 5 closest attractions to the user's last location. No matter how far away they are." />
     <MESSAGE value="add gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="add gitignore" />
+    <MESSAGE value="add pipeline" />
+    <option name="LAST_COMMIT_MESSAGE" value="add pipeline" />
   </component>
 </project>
