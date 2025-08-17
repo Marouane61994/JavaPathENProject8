@@ -29,8 +29,18 @@ jobs:
       - name: Package JAR
         run: mvn package -B -DskipTests --file TourGuide/pom.xml
 
+      - name: Install gpsUtil
+        run: mvn install:install-file -Dfile=libs/gpsUtil-1.0.0.jar -DgroupId=gpsUtil -DartifactId=gpsUtil -Dversion=1.0.0 -Dpackaging=jar
+
+      - name: Install tripPricer
+        run: mvn install:install-file -Dfile=libs/tripPricer-1.0.0.jar -DgroupId=tripPricer -DartifactId=tripPricer -Dversion=1.0.0 -Dpackaging=jar
+
+      - name: Install rewardCentral
+        run: mvn install:install-file -Dfile=libs/rewardCentral-1.0.0.jar -DgroupId=rewardCentral -DartifactId=rewardCentral -Dversion=1.0.0 -Dpackaging=jar
+
       - name: Upload JAR artifact
         uses: actions/upload-artifact@v4
         with:
           name: app-jar
           path: target/*.jar
+
