@@ -25,10 +25,10 @@ jobs:
         run: mvn install:install-file -Dfile=${GITHUB_WORKSPACE}/TourGuide/libs/gpsUtil.jar -DgroupId=gpsUtil -DartifactId=gpsUtil -Dversion=1.0.0 -Dpackaging=jar
 
       - name: Install tripPricer
-        run: mvn install:install-file -Dfile=${GITHUB_WORKSPACE}/TourGuide/libs/tripPricer.jar -DgroupId=tripPricer -DartifactId=tripPricer -Dversion=1.0.0 -Dpackaging=jar
+        run: mvn install:install-file -Dfile=${GITHUB_WORKSPACE}/TourGuide/libs/TripPricer.jar -DgroupId=tripPricer -DartifactId=tripPricer -Dversion=1.0.0 -Dpackaging=jar
 
       - name: Install rewardCentral
-        run: mvn install:install-file -Dfile=${GITHUB_WORKSPACE}/TourGuide/libs/rewardCentral.jar -DgroupId=rewardCentral -DartifactId=rewardCentral -Dversion=1.0.0 -Dpackaging=jar
+        run: mvn install:install-file -Dfile=${GITHUB_WORKSPACE}/TourGuide/libs/RewardCentral.jar -DgroupId=rewardCentral -DartifactId=rewardCentral -Dversion=1.0.0 -Dpackaging=jar
 
       - name: Compile
         run: mvn compile -B --file TourGuide/pom.xml
