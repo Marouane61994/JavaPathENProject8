@@ -20,6 +20,7 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
+      # Installer les libs locales dans le repo Maven de l'agent
       - name: Install gpsUtil
         run: mvn install:install-file -Dfile=TourGuide/libs/gpsUtil-1.0.0.jar -DgroupId=gpsUtil -DartifactId=gpsUtil -Dversion=1.0.0 -Dpackaging=jar
 
@@ -43,3 +44,4 @@ jobs:
         with:
           name: app-jar
           path: TourGuide/target/*.jar
+
